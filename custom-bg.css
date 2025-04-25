@@ -1,0 +1,21 @@
+:root{
+  /* Background Opacity Percent*/
+  --opacity: 0.6; 
+}
+
+:root body {
+  --background-image-url: url("https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=1920&q=80");
+
+  /* Themes Background color */
+  --background-primary: rgba(var(--bg0-rgb), var(--opacity));
+  --background-primary-alt: rgba(var(--bg0-rgb), var(--opacity));
+  --background-secondary: rgba(var(--bg0-rgb), var(--opacity));
+  --background-secondary-alt: rgba(var(--bg0-rgb), var(--opacity));
+}
+
+
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  background: var(--background-image-url) center/cover no-repeat;
+}
