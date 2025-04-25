@@ -18,23 +18,28 @@ Test URL: https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=192
 ```css
 :root{
   /* Background Opacity Percent*/
-  --opacity: 0.6; 
+  --background-opacity: 0.23456; 
+  /* Background Blur */
+  --background-blur: 4.5678889px;
 }
 
 :root body {
-  --background-image-url: url("your_image_url");
+  --background-image-url: url("https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=1920&q=80");
   
   /* Themes Background color, change variable if you change theme*/
-  --background-primary: rgba(var(--bg0-rgb), var(--opacity));
-  --background-primary-alt: rgba(var(--bg0-rgb), var(--opacity));
-  --background-secondary: rgba(var(--bg0-rgb), var(--opacity));
-  --background-secondary-alt: rgba(var(--bg0-rgb), var(--opacity));
+  /* Themes Background color */
+  --background-primary: rgba(var(--bg0-rgb), var(--background-opacity));
+  --background-primary-alt: rgba(var(--bg0-rgb), var(--background-opacity));
+  --background-secondary: rgba(var(--bg0-rgb), var(--background-opacity));
+  --background-secondary-alt: rgba(var(--bg0-rgb), var(--background-opacity));
 }
+
 
 body::before {
   content: "";
   position: fixed; inset: 0;
   background: var(--background-image-url) center/cover no-repeat;
+  filter: blur(var(--background-blur));
 }
 ```
 
