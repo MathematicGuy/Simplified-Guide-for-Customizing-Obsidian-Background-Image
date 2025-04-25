@@ -22,7 +22,7 @@ Test URL: https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=192
 }
 
 :root body {
-  --background-image-url: url("https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=1920&q=80");
+  --background-image-url: url("your_image_url");
   
   /* Themes Background color, change variable if you change theme*/
   --background-primary: rgba(var(--bg0-rgb), var(--opacity));
