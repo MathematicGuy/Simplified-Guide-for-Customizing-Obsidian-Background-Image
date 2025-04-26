@@ -4,6 +4,8 @@
 Check this guide: [How to add a custom image as a background](https://forum.obsidian.md/t/how-to-add-a-custom-image-as-a-background/53416)
 
 
+
+
 ### How to add a Custom Image as a Background for Everforest Enchanted Theme 
 Note: Skip to step 3 if you're using a online URL. Just paste the URL and you done lol.  
 
