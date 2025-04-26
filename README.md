@@ -13,7 +13,7 @@ Test URL: https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=192
 
 
 0) For faster loading speed, resize your Image to 950x520
-1) Then convert your Image Type (jpg, png, etc..) to .avif (reduce file size by more than 90%)
+1) Then convert your Image Type (jpg, png, etc..) to .avif (reduce file size by more than 90%) using https://convertio.co/jpg-avif/
 2) Encode your Image into base64 using https://jpillora.com/base64-encoder/
 3) Go to obsidian Appearance -> CSS Snipets (press folder icon) -> Create a file_name.css file inside snippets folder  
 4) Paste the code the .css file then add the base64 text into the url function 
