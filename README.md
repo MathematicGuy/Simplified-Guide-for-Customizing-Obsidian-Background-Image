@@ -20,9 +20,15 @@ Test URL: https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=192
 ```css
 :root{
   /* Background Opacity Percent*/
-  --background-opacity: 0.23456; 
+  --opacity: 0.348;
+  --background-opacity: 0.3456789; 
+  /* Must Constract with background */
+  --secondary-background-opacity: 0.8912345;
   /* Background Blur */
-  --background-blur: 4.5678889px;
+  --background-blur: 4.56789px;
+}
+:root .menu{
+  background-color: rgba(var(--bg0-rgb), var(--secondary-background-opacity));
 }
 
 :root body {
@@ -30,9 +36,13 @@ Test URL: https://images.pexels.com/photos/997567/pexels-photo-997567.jpeg?w=192
   
   /* Themes Background color, change variable if you change theme*/
   /* Themes Background color */
+  /** Main Background */
   --background-primary: rgba(var(--bg0-rgb), var(--background-opacity));
-  --background-primary-alt: rgba(var(--bg0-rgb), var(--background-opacity));
+  /** Other div Background but not Main*/
+  --background-primary-alt: rgba(var(--bg0-rgb), var(--opacity));
+  /** Side Bar */
   --background-secondary: rgba(var(--bg0-rgb), var(--background-opacity));
+  /** Top Bar */
   --background-secondary-alt: rgba(var(--bg0-rgb), var(--background-opacity));
 }
 
