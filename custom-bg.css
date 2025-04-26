@@ -3,11 +3,13 @@
   --opacity: 0.348;
   --background-opacity: 0.3456789; 
   /* Must Constract with background */
-  --secondary-background-opacity: 0.8912345;
+  --secondary-background-opacity: 0.912345;
   /* Background Blur */
   --background-blur: 4.56789px;
 }
-:root .menu{
+
+/** Pop-up background opacity. Constrast with main bg opacity for better visual*/
+:root .menu, .modal{ 
   background-color: rgba(var(--bg0-rgb), var(--secondary-background-opacity));
 }
 
